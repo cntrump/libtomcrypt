@@ -1,6 +1,11 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
+#include <stdio.h>
+
+#ifndef TOMCRYPT_HASH_H_
+#define TOMCRYPT_HASH_H_
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -508,3 +513,5 @@ int hash_file(int hash, const char *fname, unsigned char *out, unsigned long *ou
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* TOMCRYPT_HASH_H_ */

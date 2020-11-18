@@ -7,6 +7,8 @@
  * out the line that #define's the word for the thing you want to remove.  phew!
  */
 
+#include <time.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
