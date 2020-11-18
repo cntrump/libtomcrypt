@@ -1,6 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
+#ifndef TOMCRYPT_MISC_H_
+#define TOMCRYPT_MISC_H_
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -181,3 +184,5 @@ int compare_testvector(const void* is, const unsigned long is_len, const void* s
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* TOMCRYPT_MISC_H_ */

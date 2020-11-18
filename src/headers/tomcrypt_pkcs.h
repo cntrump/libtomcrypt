@@ -1,6 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
+#ifndef TOMCRYPT_PKCS_H_
+#define TOMCRYPT_PKCS_H_
+
 /* PKCS Header Info */
 
 #ifdef __cplusplus
@@ -104,3 +107,5 @@ int pkcs_5_test (void);
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* TOMCRYPT_PKCS_H_ */

@@ -1,6 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
+#ifndef TOMCRYPT_MAC_H_
+#define TOMCRYPT_MAC_H_
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -559,3 +562,5 @@ int chacha20poly1305_test(void);
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* TOMCRYPT_MAC_H_ */

@@ -1,6 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
+#ifndef TOMCRYPT_PK_H_
+#define TOMCRYPT_PK_H_
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -787,3 +790,5 @@ int der_length_generalizedtime(const ltc_generalizedtime *gtime, unsigned long *
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* TOMCRYPT_PK_H_ */

@@ -5,6 +5,9 @@
 #include "tomcrypt_cipher.h"
 #include "tomcrypt_hash.h"
 
+#ifndef TOMCRYPT_PRNG_H_
+#define TOMCRYPT_PRNG_H_
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -232,3 +235,5 @@ extern unsigned long (*ltc_rng)(unsigned char *out, unsigned long outlen,
 #ifdef __cplusplus
 }
 #endif
+
+#endif /* TOMCRYPT_PRNG_H_ */

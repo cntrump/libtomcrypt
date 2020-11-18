@@ -3,6 +3,9 @@
 
 #include "tomcrypt.h"
 
+#ifndef TOMCRYPT_PRIVATE_H_
+#define TOMCRYPT_PRIVATE_H_
+
 /*
  * Internal Macros
  */
@@ -445,3 +448,5 @@ int which ## _export(unsigned char *out, unsigned long *outlen, prng_state *prng
 #else
    #define LTC_BYTE(x, n) (((x) >> (8 * (n))) & 255)
 #endif
+
+#endif /* TOMCRYPT_PRIVATE_H_ */
