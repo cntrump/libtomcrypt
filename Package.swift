@@ -39,8 +39,7 @@ let package = Package(
             publicHeadersPath: "src/headers",
             cSettings: [
                 .define("LTM_DESC"),
-                .headerSearchPath("tommath"),
-                .unsafeFlags(["-Os"])
+                .headerSearchPath("tommath")
             ]
         )
     ],
