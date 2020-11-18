@@ -1,7 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
-LIBTOM_EXTERN_C_BEGIN
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Defines the LTC_ARGCHK macro used within the library */
 /* ARGTYPE is defined in tomcrypt_cfg.h */
@@ -38,4 +40,6 @@ LTC_NORETURN void crypt_argchk(const char *v, const char *s, int d);
 
 #endif
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif

@@ -1,7 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
-LIBTOM_EXTERN_C_BEGIN
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* ---- HASH FUNCTIONS ---- */
 #if defined(LTC_SHA3) || defined(LTC_KECCAK)
@@ -503,4 +505,6 @@ int hash_filehandle(int hash, FILE *in, unsigned char *out, unsigned long *outle
 int hash_file(int hash, const char *fname, unsigned char *out, unsigned long *outlen);
 #endif
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif

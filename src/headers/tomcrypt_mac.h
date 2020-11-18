@@ -1,7 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
-LIBTOM_EXTERN_C_BEGIN
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #ifdef LTC_HMAC
 typedef struct Hmac_state {
@@ -554,4 +556,6 @@ int chacha20poly1305_test(void);
 
 #endif /* LTC_CHACHA20POLY1305_MODE */
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif

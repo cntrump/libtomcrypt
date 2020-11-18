@@ -1,7 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
-LIBTOM_EXTERN_C_BEGIN
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* ---- PRNG Stuff ---- */
 #ifdef LTC_YARROW
@@ -223,4 +225,6 @@ extern unsigned long (*ltc_rng)(unsigned char *out, unsigned long outlen,
       void (*callback)(void));
 #endif
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif

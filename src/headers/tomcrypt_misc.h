@@ -1,7 +1,9 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
-LIBTOM_EXTERN_C_BEGIN
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* ---- LTC_BASE64 Routines ---- */
 #ifdef LTC_BASE64
@@ -176,4 +178,6 @@ int ssh_decode_sequence_multi(const unsigned char *in, unsigned long *inlen, ...
 
 int compare_testvector(const void* is, const unsigned long is_len, const void* should, const unsigned long should_len, const char* what, int which);
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif
