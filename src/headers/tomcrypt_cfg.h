@@ -7,7 +7,11 @@
  * out the line that #define's the word for the thing you want to remove.  phew!
  */
 
-LIBTOM_EXTERN_C_BEGIN
+#include <time.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #ifndef TOMCRYPT_CFG_H
 #define TOMCRYPT_CFG_H
@@ -306,4 +310,6 @@ typedef unsigned long ltc_mp_digit;
 #  define LTC_DEPRECATED_PRAGMA(s)
 #endif
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif

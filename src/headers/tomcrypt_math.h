@@ -1,7 +1,12 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
-LIBTOM_EXTERN_C_BEGIN
+#ifndef TOMCRYPT_MATH_H_
+#define TOMCRYPT_MATH_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /** math functions **/
 
@@ -520,4 +525,8 @@ extern const ltc_math_descriptor tfm_desc;
 extern const ltc_math_descriptor gmp_desc;
 #endif
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* TOMCRYPT_MATH_H_ */

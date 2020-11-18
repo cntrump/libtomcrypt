@@ -1,9 +1,14 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
+#ifndef TOMCRYPT_PKCS_H_
+#define TOMCRYPT_PKCS_H_
+
 /* PKCS Header Info */
 
-LIBTOM_EXTERN_C_BEGIN
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* ===> PKCS #1 -- RSA Cryptography <=== */
 #ifdef LTC_PKCS_1
@@ -99,4 +104,8 @@ int pkcs_5_alg2(const unsigned char *password, unsigned long password_len,
 int pkcs_5_test (void);
 #endif  /* LTC_PKCS_5 */
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* TOMCRYPT_PKCS_H_ */

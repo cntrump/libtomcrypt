@@ -1,7 +1,14 @@
 /* LibTomCrypt, modular cryptographic library -- Tom St Denis */
 /* SPDX-License-Identifier: Unlicense */
 
-LIBTOM_EXTERN_C_BEGIN
+#include "tomcrypt_cfg.h"
+
+#ifndef TOMCRYPT_CIPHER_H_
+#define TOMCRYPT_CIPHER_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* ---- SYMMETRIC KEY STUFF -----
  *
@@ -1161,4 +1168,8 @@ int sober128_stream_memory(const unsigned char *key,    unsigned long keylen,
 
 #endif /* LTC_SOBER128_STREAM */
 
-LIBTOM_EXTERN_C_END
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* TOMCRYPT_CIPHER_H_ */
